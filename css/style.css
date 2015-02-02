@@ -1,0 +1,69 @@
+/*
+$transition-property: all;
+$transition-time: 0.3s;
+$method: ease-in-out;*/
+/* line 1, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+* {
+  font-family: Arial, sans;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+/* line 8, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+h1, h2 {
+  margin: 1em 0 0 0;
+  text-align: center; }
+
+/* line 12, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+h2 {
+  margin: 0 0 1em 0; }
+
+/* line 15, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+#container {
+  margin: 0 auto;
+  width: 50%; }
+
+/* line 19, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+#accordion input {
+  display: none; }
+
+/* line 22, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+#accordion label {
+  background: #eee;
+  border-radius: 0.25em;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 0.125em;
+  padding: 0.25em 1em;
+  z-index: 20; }
+
+/* line 31, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+#accordion label:hover {
+  background: #ccc; }
+
+/* line 35, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+#accordion input:checked + label {
+  background: #ccc;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  color: white;
+  margin-bottom: 0; }
+
+/* line 42, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+#accordion article {
+  background: #f7f7f7;
+  height: 0px;
+  overflow: hidden;
+  z-index: 10; }
+
+/* line 48, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+#accordion article p {
+  padding: 1em; }
+
+/* line 53, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+#accordion input:checked ~ article {
+  border-bottom-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+  height: auto;
+  margin-bottom: 0.125em; }
