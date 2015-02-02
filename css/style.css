@@ -1,7 +1,3 @@
-/*
-$transition-property: all;
-$transition-time: 0.3s;
-$method: ease-in-out;*/
 /* line 1, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
 * {
   font-family: Arial, sans;
@@ -30,40 +26,57 @@ h2 {
 
 /* line 22, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
 #accordion label {
-  background: #eee;
-  border-radius: 0.25em;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 300;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  height: 10rem;
   cursor: pointer;
   display: block;
+  text-align: center;
   margin-bottom: 0.125em;
-  padding: 0.25em 1em;
-  z-index: 20; }
+  padding: 2em 1em;
+  z-index: 20;
+  font-size: 2.5em; }
 
-/* line 31, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+/* line 37, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
 #accordion label:hover {
-  background: #ccc; }
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-family: 'Open sans', sans-serif;
+  font-weight: 400; }
 
-/* line 35, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+/* line 43, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
 #accordion input:checked + label {
-  background: #ccc;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   color: white;
   margin-bottom: 0; }
 
-/* line 42, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+/* line 49, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
 #accordion article {
-  background: #f7f7f7;
+  background: #fff;
   height: 0px;
   overflow: hidden;
   z-index: 10; }
 
-/* line 48, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+/* line 55, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
 #accordion article p {
   padding: 1em; }
 
-/* line 53, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+/* line 60, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
 #accordion input:checked ~ article {
-  border-bottom-left-radius: 0.25em;
-  border-bottom-right-radius: 0.25em;
   height: auto;
   margin-bottom: 0.125em; }
+
+/* line 67, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+.accordion-bhutan {
+  background: url('../images/bhutan.jpg') no-repeat right center; }
+
+/* line 71, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+.accordion-india {
+  background: url('../images/india-city-child.jpg') no-repeat center left; }
+
+/* line 75, /Users/shelleybabij/Documents/Web/semester 5/exercise-4/scss/components/main */
+.accordion-nepal {
+  background: url('../images/nepal-landscape.jpg') no-repeat center center; }

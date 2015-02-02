@@ -5,3 +5,13 @@
     -o-transition: $transition-property $transition-time $method;
     transition: ($transition-property $transition-time $method);
 }
+
+@mixin skinny{
+	font-family: $body;
+	font-weight: 300;
+}
+
+@mixin fat{
+	font-family: $body;
+	font-weight: 400;
+}
